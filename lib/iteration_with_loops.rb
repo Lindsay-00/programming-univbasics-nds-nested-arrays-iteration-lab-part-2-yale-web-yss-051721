@@ -6,15 +6,15 @@ def find_min_in_nested_arrays(src)
   count = 0 
   while count < src.length do
     inner_count = 0
-    smallest = src[count][0]
+    small = src[count][0]
     while inner_count < src[count].length do
       
-      if src[count][inner_count] < smallest do
-        smallest = src[count][inner_count]
+      if src[count][inner_count] < small do
+        small = src[count][inner_count]
       end
       inner_count += 1
     end
-    new_array << smallest
+    new_array << small
     count += 1
   end
   new_array
